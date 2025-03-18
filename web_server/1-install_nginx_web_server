@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 sudo apt-get update -y
 sudo apt-get install -y nginx
@@ -6,5 +6,4 @@ sudo ufw allow 'Nginx HTTP'
 echo "Holberton School for the win!" | sudo tee /var/www/html/index.html
 sudo service nginx restart
 sudo service nginx status
-
 
